@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Hide input number spinners */
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+body {
+    background-image: url("./img/bg_edited_edited.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.bankBtn {
+    background: linear-gradient(#C9AD1E,#805402);
+    height: 35px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    border-radius: 8px;
+    margin: 20px;
+}
+.bankBtn b{
+    margin:20px;
+}
+
+
+
+#bankMenu {
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    margin-top:10px;
+}
+#bankMenu button{
+    margin-top:0px;
+
+}
+#bankMenu ul{
+    display:inline-flex;
+    float:right;
+    margin-right:10px;
+}
+/*connectwallet button*/
+.walletMultiBtn {
+    float: right;
+    background: linear-gradient(#C9AD1E,#805402);
+    color: black !important;
+    font-family: 'Roboto', sans-serif !important;
+    margin-right:10vh;
+}
+.wallet-adapter-dropdown{
+    float:right !important;
+}
+
+/*connectwallet btn and balance txt*/
+#bankMenu #balanceTxt {
+    color: white;
+    margin-top:30px;
+}
+
+#bankMenu .walletMenuUl {
+    display: block !important;
+}
+
+#mainBox {
+    margin: auto;
+    width: 80%;
+    min-height: 60vh;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0,0.4);
+}
+
+#Jproller {
+    background-color: #0B0A0B;
+    width: 60%;
+    height: 100px;
+    margin: auto;
+    margin-top: 8vh;
+}
+#timerTxt{
+    color:white;
+    text-align:center;
+    font-family:'Roboto', sans-serif;
+    font-size:6vh;
+}
+#potStats h1 {
+    color: #AC9138;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:30px;
+}
+#potStats b {
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#potControls {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+#potControls input{
+    display:block;
+    width:70%;
+    border-radius:8px;
+    height:35px;
+    text-align:center;
+    border:1px solid #AC9138;
+    background-color:black;
+    color: #AC9138;
+    margin:auto;
+    margin-top:10px;
+}
+#potControls input:focus{
+       outline: none;
+}
+#potControls h1 {
+    font-size:20px;
+    text-align:center;
+    color: white;
+    margin-top:4vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#potControls i {
+        background: -webkit-linear-gradient(#99571C, #DFB12D);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        padding-right: 10px;
+        
+}
+#potControls button{
+    margin-left:30px;
+}
+
+
+#betsList {
+    overflow-y:auto;
+    max-height: 20vh;
+}
+#betsList ul {
+   
+    
+    
+}#betsList ul li{
+     text-align:center;
+    
+     margin:auto;
+     margin-top:20px;
+     width:60%;
+     border-radius:6px;
+     border:1px solid white;
+     background-color: #0B0A0B;
+}
+.winner{
+    border:1px solid greenyellow !important;
+    transform: scale(1.1) ;
+    translate: 2s;
+}
+ #betsList ul li p{
+    color:white;  
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align:center;
+    font-size:18px;
+    
+ }
+
+/*roller*/
+#image {
+    border-radius: 32px;
+    border: 2px solid yellow;
+    width: 64px;
+    height: 64px;
+    margin: 0 5px;
+    color: white;
+    background: blue;
+    text-align: center;
+    line-height: 64px;
+    display: inline-block;
+    /*   flex-wrap:nowrap; */
+}
+
+#stick {
+    width: 5px;
+    background-color: orange;
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    left: 50%;
+    z-index: 999;
+}
+#slider {
+    overflow: hidden;
+    position: relative;
+    padding: 20px;
+    width: 100%;
+    background-color: #111;
+    height: 100px;
+}
+
+#roller {
+    width: auto;
+    white-space: nowrap;
+    /*   background-color: yellow; */
+    position: absolute;
+}
